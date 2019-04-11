@@ -1,0 +1,20 @@
+{
+  "name": "@modwatch/types",
+  "version": "0.1.0",
+  "description": "Typescript definitions for common interfaces used by Modwatch",
+  "types": "index.ts",
+  "scripts": {
+    "prettier": "prettier --write 'index.ts'",
+    "gitadd": "git add index.ts"
+  },
+  "precommit": [
+    "prettier",
+    "gitadd"
+  ],
+  "author": "Aaron Ballard (ans.ballard@gmail.com)",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.16.1",
+    "typescript": "^3.2.4"
+  }
+}
