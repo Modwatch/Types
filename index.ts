@@ -45,3 +45,27 @@ export type FileName =
 export type FileTypes = string[];
 export type ModFile = string[];
 export type Roles = "admin";
+export type User = {
+  authenticated: boolean;
+  username: string;
+  token?: string;
+  scopes: string[];
+};
+export type Notification = {
+  message: string;
+  type: string;
+  removalDelay: number;
+  delay: number;
+  softDelete: boolean;
+  _id: string;
+};
+export type Line = {
+  descriptor?: string;
+  type?: string;
+  index: number;
+  hide?: boolean;
+  content?: {
+    class: string;
+    display: string;
+  }[];
+};
