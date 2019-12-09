@@ -1,6 +1,6 @@
 {
   "name": "@modwatch/types",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Typescript definitions for common interfaces used by Modwatch",
   "types": "index.ts",
   "scripts": {
