@@ -1,0 +1,80 @@
+type Modlist {
+  username: String!
+  password: String
+  roles: [Roles]
+  scopes: [Roles]
+  game: Game!
+  timestamp: Date!
+  plugins: [String]!
+  modlist: [String]
+  ini: [String]
+  prefsini: [String]
+  enb: String
+  tag: String
+  score: Int
+  files: FileKeyValue
+}
+type FileKeyValue {
+  plugins: Int!
+  modlist: Int
+  ini: Int
+  prefsini: Int
+  enbocal: Int
+  skse: Int
+}
+type UploadProfileRequest {
+  username: String!
+  password: String
+  game: Game!
+  timestamp: Date!
+  plugins: [String]!
+  modlist: [String]
+  ini: [String]
+  prefsini: [String]
+  enb: String
+  tag: String
+  score: Int
+}
+enum Game {
+| skyrim
+| skyrimse
+| fallout4
+| skyrimvr
+| fallout4vr
+}
+enum FileName {
+| plugins
+| modlist
+| ini
+| prefsini
+| enblocal
+| skse
+}
+enum Roles {
+  admin
+}
+type User {
+  authenticated: Boolean!
+  username: String!
+  token: String
+  scopes: [String!]!
+}
+type Notification{
+  message: String
+  type: String
+  removalDelay: Int
+  delay: Int
+  softDelete: Boolean
+  _id: String
+}
+type Line {
+  descriptor: String
+  type: String
+  index: Int!
+  hide: Boolean
+  content: [LineContent]
+}
+type LineContent {
+  class: String
+  display: String
+}

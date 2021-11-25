@@ -1,6 +1,6 @@
 {
   "name": "@modwatch/types",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Typescript definitions for common interfaces used by Modwatch",
   "types": "index.ts",
   "scripts": {
@@ -16,5 +16,8 @@
     "pre-commit": "^1.2.2",
     "prettier": "^1.16.1",
     "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "graphql": "^16.0.1"
   }
 }
