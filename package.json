@@ -12,6 +12,12 @@
     "gitadd"
   ],
   "author": "Aaron Ballard (ans.ballard@gmail.com)",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "index.ts"
+  ],
   "devDependencies": {
     "pre-commit": "^1.2.2",
     "prettier": "^1.16.1",
